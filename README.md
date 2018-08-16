@@ -19,7 +19,7 @@ A note about referencing. An externally referenced library may offer URLs that a
 Instead I either use a URL reference that is version specific(if available) or download and serve my own copy. My goal is to establish a fixed 'known' version of a library and only update on my watch.
 
 # Into the future:
-Eventually I would like create files that include HTML configuration (AND classes) specific to a framework. (e.g. bootstrap's panels, modals, etc.)
+Eventually I would like to create files that include HTML configuration (AND classes) specific to a framework. (e.g. bootstrap's panels, modals, etc.)
 e.g.
   index.html
   bootstrap_4.1.html
