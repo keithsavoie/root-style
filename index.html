@@ -10,7 +10,7 @@
 	<meta name="version" content="0.1">
 	<link rel="stylesheet" href="root-style.css">
 
-	<!-- Librarires
+	<!-- Librarires CSS
 	Reference all libraries css used within project (e.g. bootstrap, foundation, angular, fontawesome, normalize.css. et. ) -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -28,9 +28,7 @@
 
 	<section class="rootstyle-Intro">
 		<div style="text-align: center;"><b>ROOT STYLE</b><br><a href="https://github.com/keithsavoie/root-style" target="_blank">https://github.com/keithsavoie/root-style</a></div>
-		<p>This files is a typeography styling reference for classless base HTML5 tags used in common scenarios and paterns.<br>Review the README
-			file for an explanation on how this file helps me in my projects.
-		</p>
+		<p>This files is a typeography styling reference for classless base HTML5 tags used in common scenarios and paterns.<br>Review the README file for an explanation on how this file helps me in my projects.</p>
 	</section>
 
 	<!-- section template
@@ -116,12 +114,15 @@
 					<b>Text is Bold ( b )</b><br>
 					<i>Text is Italic ( i )</i><br>
 					<code>Text is Code</code><br>
-					<small>Text is Small</small><br> Text is <mark>Marked</mark> ( mark )<br> Text is <del>Deleted</del> ( del )<br> Text is <sub>Subscripted</sub> ( sub )<br> Text is <sup>Superscrpted</sup> ( sup )
+					<big>Text is Big</big><br>
+					<small>Text is Small</small><br> Text is <mark>Marked</mark> ( mark )<br> Text is <del>Deleted</del> ( del )<br> Text is <sub>Subscripted</sub> ( sub )<br> Text is <sup>Superscrpted</sup> ( sup )<br> Test is <q>quoted</q> ( q )<br> Text is
+					<abbr title="text of abbreviation">abbreviated</abbr> note: same for acronym ( abbr )
 				</div>
 				<div>
 					<div class="rootstyleContainer-Description">Semantic</div>
 					<strong>Text is Strong</strong><br>
 					<em>Text is Emphasized ( em )</em><br>
+					<cite>Text is Cite</cite>
 				</div>
 			</div>
 			<a href="#">This is a link</a>
@@ -408,6 +409,124 @@
 			</table>
 		</div>
 	</section>
+
+	<section class="rootstyleContainer">
+		<div class="rootstyleContainer-Title">Images</div>
+		<div class="rootstyleContainer-Description"></div>
+		<div class="rootstyleContainer-Tags">
+			<img width="450" height="auto" src="https://images.freeimages.com/images/large-previews/700/road-to-nowhere-1383109.jpg" alt="Road to nowhere">
+			<img width="450" height="auto" src="https://images.freeimages.com/images/large-previews/700/road-to-nowhere-1383109.jpg" alt="Road to nowhere">
+		</div>
+	</section>
+
+	<section class="rootstyleContainer">
+		<div class="rootstyleContainer-Title">Forms</div>
+		<div class="rootstyleContainer-Description"></div>
+		<div class="rootstyleContainer-Tags">
+			<form>
+				<div class="rootstyleSide-by-side">
+					<div>
+						<div class="rootstyleContainer-Description">Input</div>
+						<label for="text">Label for text<label><br>
+						<input type="text" id="text" name="text" placeholder="text"><br>
+
+						<label for="password">Label for password<label><br>
+						<input type="password" id="password" name="password" placeholder="password"><br>
+
+						<label for="color">Label for color</label><br>
+						<input type="color" id="color" name="color" placeholder="color"><br>
+
+						<label for="date">Label for date</label><br>
+						<input type="date" id="date" name="date" placeholder="date" min="1979-12-31" max="2000-01-02"><br>
+
+						<label for="datetime-local">Label for datetime-local</label><br>
+						<input type="datetime-local" id="atetime-local" name="atetime-local" placeholder="datetime-local"><br>
+
+						<label for="email">Label for email</label><br>
+						<input type="email" id="email" name="email" placeholder="email"><br>
+
+						<label for="month">Label for month</label><br>
+						<input type="month" id="month" name="month" placeholder="month"><br>
+
+						<label for="number">Label for number</label><br>
+						<input type="number" id="number" name="number" placeholder="number" min="1" max="5" step="1"><br>
+
+						<label for="range">Label for range</label><br>
+						<input type="range" id="range" name="range" placeholder="range" min="0" max="10"><br>
+
+						<label for="search">Label for search</label><br>
+						<input type="search" id="search" name="search" placeholder="search"><br>
+
+						<label for="tel">Label for tel</label><br>
+						<input type="tel" id="tel" name="tel" placeholder="tel"><br>
+
+						<label for="time">Label for time</label><br>
+						<input type="time" id="time" name="time" placeholder="time"><br>
+
+						<label for="url">Label for url</label><br>
+						<input type="url" id="url" name="url" placeholder="url"><br>
+
+						<label for="week">Label for week</label><br>
+						<input type="week" id="week" name="week" placeholder="week">
+					</div>
+					<div>
+						<div class="rootstyleContainer-Description">Input disabled</div>
+						<label for="text">Label for text disabled<label><br>
+						<input type="text" id="text" name="text" placeholder="text disabled" disabled><br>
+
+						<label for="password">Label for password disabled<label><br>
+						<input type="password" id="password" name="password" placeholder="password disabled" disabled><br>
+
+						<label for="color">Label for color disabled</label><br>
+						<input type="color" id="color" name="color" placeholder="color disabled" disabled><br>
+
+						<label for="date">Label for date disabled</label><br>
+						<input type="date" id="date" name="date" placeholder="date disabled" min="1979-12-31" max="2000-01-02" disabled><br>
+
+						<label for="datetime-local">Label for datetime-local disabled</label><br>
+						<input type="datetime-local" id="atetime-local" name="atetime-local" placeholder="datetime-local disabled" disabled><br>
+
+						<label for="email">Label for email disabled</label><br>
+						<input type="email" id="email" name="email" placeholder="email disabled" disabled><br>
+
+						<label for="month">Label for month disabled/label><br>
+						<input type="month" id="month" name="month" placeholder="month disabled" disabled><br>
+
+						<label for="number">Label for number disabled</label><br>
+						<input type="number" id="number" name="number" placeholder="number disabled" min="1" max="5" step="1" disabled><br>
+
+						<label for="range">Label for range disabled</label><br>
+						<input type="range" id="range" name="range" placeholder="range disabled" min="0" max="10" disabled><br>
+
+						<label for="search">Label for search disabled</label><br>
+						<input type="search" id="search" name="search" placeholder="search disabled" disabled><br>
+
+						<label for="tel">Label for tel disabled</label><br>
+						<input type="tel" id="tel" name="tel" placeholder="tel disabled" disabled><br>
+
+						<label for="time">Label for time disabled</label><br>
+						<input type="time" id="time" name="time" placeholder="time disabled" disabled><br>
+
+						<label for="url">Label for url disabled</label><br>
+						<input type="url" id="url" name="url" placeholder="url disabled" disabled><br>
+
+						<label for="week">Label for week disabled</label><br>
+						<input type="week" id="week" name="week" placeholder="week disabled" disabled>
+					</div>
+				</div>
+			</form>
+			<div class="rootstyleContainer-Description">Button</div>
+			<button>Button</button> <br>
+			<input type="submit" id="submit" name="submit" value="Input type=submit">
+		</div>
+	</section>
+
+
+	<!-- Librarires JS
+	Reference all libraries JS used within project (e.g. bootstrap, foundation, angular, fontawesome, normalize.css. et. ) 
+	Note this is required as some frameworks dynamically add styling -->
+
+
 
 </body>
 
