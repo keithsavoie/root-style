@@ -6,7 +6,7 @@ Whenever I start a web project that includes 3rd party libraries containing thei
 I use this to view how libraries effect general typography. Then as I'm building the project I refer back to this whenever I make adjustments effecting typography. 
 A file that provides reference to not only size, color and line-spacing, but spacing between subsequent and nested tags.    
 
-Additionally I use it to store my projects color pallet and font based iconography references/nomenclature (e.g. font awesome).
+Additionally I use it to store my projects color palette and font based iconography references/nomenclature (e.g. font awesome).
 
 
 # You can help:
