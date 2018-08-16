@@ -2,7 +2,7 @@
 CSS typography style reference to help configure initial css styles when referencing external libraries
 
 # What i'm trying to accomplish:
-Whenever I start a web project that includes 3rd party libraries containing their own css files, I wanted a guide/file formatted with classless HTML root tags used in common scenarios. 
+Whenever I start a web project that includes 3rd party libraries containing their own css files, I wanted a guide/file formatted with classless HTML root tags used in common scenarios and patterns. 
 I use this to view how libraries effect general typography. Then as I'm building the project I refer back to this whenever I make adjustments effecting typography. 
 A file that provides reference to not only size, color and line-spacing, but spacing between subsequent and nested tags.    
 
