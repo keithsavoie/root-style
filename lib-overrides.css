@@ -1,0 +1,146 @@
+/* Body copy style and paragraph spacing */
+
+
+.color-red-light {
+  background-color: #ff9999;
+}
+
+.color-red {
+  background-color: Red;
+}
+
+.color-red-dark {
+  background-color: DarkRed;
+}
+
+
+/* Body copy style and paragraph spacing */
+body, html {
+}
+
+p {
+}
+
+p:not(:only-of-type):first-of-type {
+  margin-top: 0em;
+}
+
+p + p {
+}
+
+p + p:last-of-type {
+}
+
+p:empty {
+  display: none;
+}
+
+p:-moz-only-whitespace {
+  display: none;
+ /* Mozilla-only pseudo-class that works like :blank will */
+}
+
+/* Headline */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+}
+
+h1 {
+}
+
+h1:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h1 + h1 {
+}
+
+h1 + h1:last-of-type {
+}
+
+h2 {
+}
+
+h2:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h2 + h2 {
+}
+
+h2 + h2:last-of-type {
+}
+
+h3 {
+}
+
+h3:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h3 + h3 {
+}
+
+h3 + h3:last-of-type {
+}
+
+h4 {
+}
+
+h4:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h4 + h4 {
+}
+
+h4+ h4:last-of-type {
+}
+
+h5 {
+}
+
+h5:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h5 + h5 {
+}
+
+h5 + h5:last-of-type {
+}
+
+h6 {
+}
+
+h6:not(:only-of-type):first-of-type {
+  margin-top: 0.3em;
+}
+
+h6 + h6 {
+}
+
+h6 + h6:last-of-type {
+}
+
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h3 + h3, h3 + h4, h3 + h5, h3 + h6,
+h4 + h4, h4 + h5, h4 + h6,
+h5 + h5, h5 + h6 {
+	/* recommend scaleable units (e.g. 0.5em) */
+  margin-bottom: 0.3em;
+}
+
+h1 + p:not(:empty) /* immediate paragraph */,
+h2 + p:not(:empty) /* immediate paragraph */,
+h3 + p:not(:empty) /* immediate paragraph */,
+h4 + p:not(:empty) /* immediate paragraph */,
+h5 + p:not(:empty) /* immediate paragraph */,
+h6 + p:not(:empty) /* immediate paragraph */ {
+  margin-top: -0.2em;
+}
+
+p + h1 {
+}
