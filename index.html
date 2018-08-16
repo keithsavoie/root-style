@@ -11,11 +11,11 @@
 	<link rel="stylesheet" href="root-style.css">
 
 	<!-- Librarires
-	Reference all libraries css used within project (e.g. bootstrap, foundation, angular, fontawesome) -->
-	<link rel="stylesheet" href="lib/fontawesome-pro-5.2.0-web/css/all.min.css">
+	Reference all libraries css used within project (e.g. bootstrap, foundation, angular, fontawesome, normalize.css. et. ) -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
-	<!-- this the last css file in your projects -->
+	<!-- this the last css file in your project -->
 	<link rel="stylesheet" href="lib-overrides.css">
 
 
@@ -26,46 +26,56 @@
 
 <body>
 
-<section class="rootstyle-Intro">
-	This files purpose is as a styling guide for base HTML5 used in common scenarios and act as a reference for common elements used in a project.<br>
-	If you are like me I don't like modifing a libraries css. I prefer duplicating a libraries style in my own 'override' file and change its styling there. I may even have independant override files named after the libraries they are overrideing. <br>
-	This allows me to update libraries usually with little css issues. To use, reference all library css files first, then your custom 'override' css file. Once you have your initial external librarires referenced.
-</section>
+	<section class="rootstyle-Intro">
+		<div style="text-align: center;"><b>ROOT STYLE</b><br><a href="https://github.com/keithsavoie/root-style" target="_blank">https://github.com/keithsavoie/root-style</a></div>
+		<p>This files is a typeography styling reference for classless base HTML5 tags used in common scenarios and paterns.<br>Review the README
+			file for an explanation on how this file helps me in my projects.
+		</p>
+	</section>
 
+	<!-- section template
 	<section class="rootstyleContainer">
 		<div class="rootstyleContainer-Title"></div>
 		<div class="rootstyleContainer-Description"></div>
 		<div class="rootstyleContainer-Tags"></div>
 	</section>
-
-
-
+	-->
 
 	<section class="rootstyleContainer">
 		<div class="rootstyleContainer-Title">
-			Pallet
+			Palette
 		</div>
 		<div class="rootstyleContainer-Description"></div>
 		<div class="rootstyleContainer-Tags">
-			<table class="rootstyleColorPallet">
-				<tr>
-					<td class="color-red-light">&nbsp;&nbsp;</td>
-					<td>color-red-light</td>
-				</tr>
-				<tr>
-					<td class="color-red">&nbsp;&nbsp;</td>
-					<td>color-red</td>
-				</tr>
-				<tr>
-					<td class="color-red-dark">&nbsp;&nbsp;</td>
-					<td>color-red-dark</td>
-				</tr>
-			</table>
+			<div class="rootstyleSide-by-side">
+				<div>
+					<div class="rootstyleContainer-Description">Primary</div>
+					<table class="rootstyleColorPalette">
+						<tr>
+							<td class="color-red-light">&nbsp;&nbsp;</td>
+							<td>color-red-light</td>
+						</tr>
+						<tr>
+							<td class="color-red">&nbsp;&nbsp;</td>
+							<td>color-red</td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<div class="rootstyleContainer-Description">Secondary</div>
+					<table class="rootstyleColorPalette">
+						<tr>
+							<td class="color-red-dark">&nbsp;&nbsp;</td>
+							<td>color-red-dark</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="rootstyleContainer">
-		<div class="rootstyleContainer-Title">Icon Legend</div>
+		<div class="rootstyleContainer-Title">Iconography</div>
 		<div class="rootstyleContainer-Description"></div>
 		<div class="rootstyleContainer-Tags">
 			<div class="rootstyleSide-by-side">
@@ -97,16 +107,40 @@
 	</section>
 
 	<section class="rootstyleContainer">
+		<div class="rootstyleContainer-Title">Text</div>
+		<div class="rootstyleContainer-Description"></div>
+		<div class="rootstyleContainer-Tags">
+			<div class="rootstyleSide-by-side">
+				<div>
+					<div class="rootstyleContainer-Description">Structure/Display</div>
+					<b>Text is Bold ( b )</b><br>
+					<i>Text is Italic ( i )</i><br>
+					<code>Text is Code</code><br>
+					<small>Text is Small</small><br> Text is <mark>Marked</mark> ( mark )<br> Text is <del>Deleted</del> ( del )<br> Text is <sub>Subscripted</sub> ( sub )<br> Text is <sup>Superscrpted</sup> ( sup )
+				</div>
+				<div>
+					<div class="rootstyleContainer-Description">Semantic</div>
+					<strong>Text is Strong</strong><br>
+					<em>Text is Emphasized ( em )</em><br>
+				</div>
+			</div>
+			<a href="#">This is a link</a>
+		</div>
+	</section>
+
+
+
+	<section class="rootstyleContainer">
 		<div class="rootstyleContainer-Title">
 			Body copy style and paragraph spacing
 		</div>
 		<div class="rootstyleContainer-Description"></div>
 		<div class="rootstyleContainer-Tags">
-			<p><strong>:first-of-type &lt;p&gt;</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+			<p><strong>&lt;p&gt; :first-of-type</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
 				ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
-				ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</p>
-			<p><strong>:last-of-type &lt;p&gt;</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
+				libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</p>
+			<p><strong>&lt;p&gt; :last-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
 				ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</p>
 		</div>
 	</section>
@@ -175,8 +209,6 @@
 			Heading | subs and paragraphs
 		</div>
 		<div class="rootstyleContainer-Tags">
-
-
 			<div class="rootstyleSide-by-side">
 				<div>
 					<h1>Heading h1</h1>
@@ -234,127 +266,148 @@
 
 				</div>
 			</div>
-
-
-
-
-
-
 		</div>
 	</section>
 
-
-
-
-
-
-
-
-	<xmp>
-		Lists
-	</xmp>
-
-	<div class="rootstyleSide-by-side">
-		<div>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ul>
-
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ul>
-
-			<h2>H2 Title Above UL List</h2>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ul>
-
-			<h3>H3 Title Above UL List</h3>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ul>
+	<section class="rootstyleContainer">
+		<div class="rootstyleContainer-Title">Lists</div>
+		<div class="rootstyleContainer-Description"></div>
+		<div class="rootstyleContainer-Tags">
+			<div class="rootstyleSide-by-side">
+				<div>
+					<div class="rootstyleContainer-Description">Unordered</div>
+					<ul>
+						<li><strong>&lt;li&gt; :first-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li><strong> &lt;li&gt; :last-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interduLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean
+							vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus
+							congue lorem blandit accumsan.</li>
+					</ul>
+					<ul>
+						<li><strong> &lt;li&gt; :first-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li><strong> &lt;li&gt; :last-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interduLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean
+							vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus
+							congue lorem blandit accumsan.</li>
+					</ul>
+					<h1>H1 above unordered list</h1>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+					<h2>H2 above unordered list</h2>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+					<h3>H3 above unordered list</h3>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+					<h4>H4 above unordered list</h4>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+					<h5>H5 above unordered list</h5>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+					<h6>H6 above unordered list</h6>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ul>
+				</div>
+				<div>
+					<div class="rootstyleContainer-Description">Ordered</div>
+					<ol>
+						<li><strong> &lt;li&gt; :first-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li><strong> &lt;li&gt; :last-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interduLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean
+							vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus
+							congue lorem blandit accumsan.</li>
+					</ol>
+					<ol>
+						<li><strong> &lt;li&gt; :first-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+						<li><strong> &lt;li&gt; :last-of-type</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies
+							ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interduLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean
+							vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus
+							congue lorem blandit accumsan.</li>
+					</ol>
+					<h1>H1 above ordered list</h1>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+					<h2>H2 above ordered list</h2>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+					<h3>H3 above ordered list</h3>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+					<h4>H4 above ordered list</h4>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+					<h5>H5 above ordered list</h5>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+					<h6>H6 above ordered list</h6>
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere
+							ligula libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
+					</ol>
+				</div>
+			</div>
 		</div>
-		<div>
-			<xmp>
-				<ol type="X">
-					type="1" Items listed as numbers (default) type="A" Items listed as uppercase letters type="a" Items listed as lowercase letters type="I" Items listed as uppercase roman numbers type="i" Items listed as lowercase roman numbers
-			</xmp>
+	</section>
 
-			<ol>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ol>
-
-			<ol>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ol>
-
-			<h3>H3 Title Above UL List</h3>
-			<ol>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est felis, gravida non porttitor id, tempor nec urna. Sed blandit ligula in ipsum vestibulum faucibus. Aenean vitae justo ullamcorper, ultricies ipsum a, tristique augue. Sed posuere ligula
-					libero, ut sodales orci interdum a. Curabitur vel luctus felis. Proin malesuada dapibus gravida. Vestibulum vitae ullamcorper ipsum, aliquet aliquam dui. Cras tempus congue lorem blandit accumsan.</li>
-			</ol>
+	<section class="rootstyleContainer">
+		<div class="rootstyleContainer-Title">Table</div>
+		<div class="rootstyleContainer-Description"></div>
+		<div class="rootstyleContainer-Tags">
+			<table>
+				<caption>Table caption</caption>
+				<tr>
+					<th>Column 1 head</th>
+					<th>Column 2 head</th>
+					<th>Column 3 head</th>
+				</tr>
+				<tr>
+					<td>Row 1 column 1</td>
+					<td>Row 1 column 2</td>
+					<td>$100</td>
+				</tr>
+				<tr>
+					<td>Row 2 column 1</td>
+					<td>Row 2 column 2</td>
+					<td>$50</td>
+				</tr>
+			</table>
 		</div>
-	</div>
-
-	<xmp>
-		Tables
-	</xmp>
-	<table>
-		<caption>Monthly savings</caption>
-		<tr>
-			<th>Month</th>
-			<th>Savings</th>
-		</tr>
-		<tr>
-			<td>January</td>
-			<td>$100</td>
-		</tr>
-		<tr>
-			<td>February</td>
-			<td>$50</td>
-		</tr>
-	</table>
-
-
-
-
-
+	</section>
 
 </body>
 

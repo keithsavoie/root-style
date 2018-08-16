@@ -1,8 +1,13 @@
+/*
+   Author: Keith Savoie
+   Repo: https://github.com/keithsavoie/root-style
+ */
+
 .rootstyle-Intro {
   background-color: rgb(0,0,0,0.1);
-    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-	padding: 20px;
- }
+  font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+  padding: 20px;
+}
 
 .rootstyleContainer,
 .rootstyleContainer-Title,
@@ -40,12 +45,12 @@
   width: auto;
 }
 
-.rootstyleColorPallet tr td:last-of-type:before {
+.rootstyleColorPalette tr td:last-of-type:before {
   content: '.';
   display: inline-block;
 }
 
-.rootstyleContainer + .rootstyleContainer {
+.rootstyleContainer {
   margin-top: 45px;
 }
 
@@ -58,9 +63,26 @@ xmp {
   white-space: pre;
 }
 
+.rootstyleSide-by-side {
+	position: relative;
+}
+
 .rootstyleSide-by-side > div {
   float: left;
-  width: 50%;
+  width: calc(50% - 10px);
+  bottom: 0;
+}
+
+.rootstyleSide-by-side > div:first-of-type {
+  border-right: 1px solid rgb(0,0,0,0.1);
+}
+
+.rootstyleSide-by-side > div:last-of-type {
+  border-left: 1px solid rgb(0,0,0,0.1);
+}
+
+.rootstyleSide-by-side > div:first-of-type {
+  margin-right: 18px;
 }
 
 .rootstyleSide-by-side:after {

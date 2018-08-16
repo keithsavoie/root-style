@@ -1,6 +1,9 @@
-/* Body copy style and paragraph spacing */
+/*
+   Author: Keith Savoie
+   Repo: https://github.com/keithsavoie/root-style
+ */
 
-
+/* Color examples */
 .color-red-light {
   background-color: #ff9999;
 }
@@ -13,16 +16,26 @@
   background-color: DarkRed;
 }
 
-
-/* Body copy style and paragraph spacing */
+/*
+   This file contains tag pairings you might find usefull allowing for finer
+   typeography control
+ */
 body, html {
 }
 
+/* Paragraph */
 p {
 }
 
+p:first-of-type {
+}
+
 p:not(:only-of-type):first-of-type {
-  margin-top: 0em;
+}
+
+p:empty {
+	/* why bother */
+  display: none;
 }
 
 p + p {
@@ -31,26 +44,15 @@ p + p {
 p + p:last-of-type {
 }
 
-p:empty {
-  display: none;
-}
-
-p:-moz-only-whitespace {
-  display: none;
- /* Mozilla-only pseudo-class that works like :blank will */
-}
 
 /* Headline */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0em;
-  margin-bottom: 0.3em;
 }
 
 h1 {
 }
 
 h1:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h1 + h1 {
@@ -63,7 +65,6 @@ h2 {
 }
 
 h2:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h2 + h2 {
@@ -76,7 +77,6 @@ h3 {
 }
 
 h3:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h3 + h3 {
@@ -89,7 +89,6 @@ h4 {
 }
 
 h4:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h4 + h4 {
@@ -102,7 +101,6 @@ h5 {
 }
 
 h5:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h5 + h5 {
@@ -115,7 +113,6 @@ h6 {
 }
 
 h6:not(:only-of-type):first-of-type {
-  margin-top: 0.3em;
 }
 
 h6 + h6 {
@@ -130,7 +127,6 @@ h3 + h3, h3 + h4, h3 + h5, h3 + h6,
 h4 + h4, h4 + h5, h4 + h6,
 h5 + h5, h5 + h6 {
 	/* recommend scaleable units (e.g. 0.5em) */
-  margin-bottom: 0.3em;
 }
 
 h1 + p:not(:empty) /* immediate paragraph */,
@@ -139,8 +135,20 @@ h3 + p:not(:empty) /* immediate paragraph */,
 h4 + p:not(:empty) /* immediate paragraph */,
 h5 + p:not(:empty) /* immediate paragraph */,
 h6 + p:not(:empty) /* immediate paragraph */ {
-  margin-top: -0.2em;
+  /* recommend scaleable units (e.g. 0.5em) */
 }
 
 p + h1 {
+}
+
+p + h2 {
+}
+
+p + h3 {
+}
+
+p + h4 {
+}
+
+p + h5 {
 }
