@@ -1,5 +1,5 @@
 # root-style
-CSS typography style guide to help configure initial css styles when referencing external libraries
+CSS typography style reference to help configure initial css styles when referencing external libraries
 
 # What i'm trying to accomplish:
 Whenever I start a web project that includes 3rd party libraries containing their own css files, I wanted a guide/file formatted with classless HTML root tags used in common scenarios. 
