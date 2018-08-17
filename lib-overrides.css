@@ -24,6 +24,11 @@ body, html {
 }
 
 /* Paragraph */
+p:empty {
+	/* why bother */
+	display: none;
+}
+
 p {
 }
 
@@ -33,17 +38,11 @@ p:first-of-type {
 p:not(:only-of-type):first-of-type {
 }
 
-p:empty {
-	/* why bother */
-  display: none;
-}
-
 p + p {
 }
 
 p + p:last-of-type {
 }
-
 
 /* Headline */
 h1, h2, h3, h4, h5, h6 {
