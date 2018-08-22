@@ -6,7 +6,7 @@ Whenever I start a web project that includes 3rd party libraries containing thei
 I use this to view how libraries effect general typography. Then as I'm building the project I refer back to this whenever I make adjustments effecting typography. 
 A file that provides reference to not only size, color and line-spacing, but spacing between subsequent and nested tags.    
 
-Additionally I use it to store my projects color palette and font based iconography references/nomenclature (e.g. fontawesome).
+Additionally I use it to store references of my projects color palette, font-based iconography (e.g. fontawesome), and nomenclature.
 
 # How do I use it:
 There is no right way but I copy the root-style directory to the root of my project. Then within its index.html file reference all the same css/js library files as my project being carefull to mirror their ordering. I create a lib-overrides.css file (that loads after all other css files) where I duplicate a libraries css and modify only the specific attribute when a change is needed. 
